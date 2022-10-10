@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    background-color: rgb(27, 36, 48);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:rgb(228, 113, 41);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: rgb(27, 36, 48);
+}
+main a{
+    text-decoration: none;
+    color: black; 
+    padding: 9px;
+    background-color:rgb(228, 113, 41);
+}
+
+main a:hover {
+background-color: rgba(245, 245, 220, 0.411);
+}
+/* ---------- Inicio Header ----------- */
+header {
+    height: 15vh;
+    background-color: rgb(27, 36, 48);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: rgb(214, 213, 168);
+}
+
+h2,
+h3,
+h4 {
+    font-size: 2.2rem;
+}
+
+header div.marca {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+
+}
+
+header div.marca a {
+    text-decoration: none;
+
+}
+header div.marca a :hover {
+    color: rgb(228, 113, 41);
+}
+
+
+
+header nav {
+    min-width: 50vw;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+
+}
+
+header nav a {
+    padding: 3px;
+    color: rgb(214, 213, 168);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: rgb(228, 113, 41);
+}
+/* ------------ Fin Header ----------- */
+
+
+
+
+/* ------------ Inicio Main ----------- */
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section p{
+    text-align: center;
+}
+
+main section.productos {
+    width: 100%;
+    height: 18rem;
+    background-image: linear-gradient(to right,
+            rgba(90, 88, 88, 0.815),
+            rgba(207, 207, 207, 0.671)),
+        url("../assets/img/fondos/fondo-productos.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+main section.quienes-somos{
+    width: 100%;
+    height: 16rem;
+    background-color: rgb(27, 36, 48);
+    display: flex;
+}
+
+main section.quienes-somos div.texto-quienes-somos{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main section.quienes-somos div.fondo{
+    width: 50%;
+    height: 100%;
+    background-image:url("../assets/img/fondos/fondo-quienes_somos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+main section.sucursales-contactos{
+    width: 100%;
+    height: 18rem;
+    background-color: rgba(90, 88, 88);
+    display: flex;
+}
+
+main section.sucursales-contactos div.sucursales, main section.sucursales-contactos div.contacto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main section.sucursales-contactos div.sucursales{
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.589),
+    rgba(78, 76, 76, 0.425)),
+url("../assets/img/fondos/fondo-conocenos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main section.servicio {
+    background-color: rgb(233, 195, 171);
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+main section.servicio img{
+    width: 2rem;
+}
+
+main section.servicio div{
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section.servicio p{
+    text-align: center;
+    color: black;
+}
+
+
+
+
+/*--------------- Fin main----------- */
+
+/* -------------- Sucursales --------- */
+main.sucursales {
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.589),
+            rgba(78, 76, 76, 0.425)),
+        url("../assets/img/fondos/fondo-sucursales.jpg");
+    background-position: 50%;
+    background-size: cover;
+}
+main div {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+
+main div table {
+    background-color: rgba(27, 36, 48, 0.747);
+    color: rgb(214, 213, 168);
+    margin-top: 3rem;
+    width: 65vw;
+}
+
+main div table,th,td{
+    text-align: center;
+    padding: 6px;
+    border-collapse: collapse;
+    border-top: 1px solid black;
+}
+/* ------------Fin Sucursales----------------- */
+
+
+
+
+/* ----------- Sobre Nosotros ---------------- */
+div.nosotros{
+    background-color: rgb(233, 195, 171);
+    width: 75%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+div.nosotros section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+}
+
+
+h3.titulo-quienes-somos {
+    color: black;
+}
+
+div.nosotros-info p,div.nosotros-info h3{
+    padding: 1rem;
+    color: black;
+    
+    
+}
+
+
+div.nosotros-img {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+ 
+}
+div.nosotros-img img{
+    margin: 1rem;
+    height: 8rem;
+    width: 7rem;
+}
+
+
+
+/* ----------- Fin Nosotros ---------------- */
+
+
+/* -------------- Contacto ----------------- */
+main.main-contacto {
+    background-image: url("../assets/img/fondos/fondo-contacto.jpg");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section.contacto{
+    padding: 1rem;
+    margin-top: 4rem;
+    background-color: rgba(46, 62, 83, 0.747);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.contacto div.contacto-info{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+section.contacto div.contacto-info p {
+    margin-top: 1rem;
+    
+}
+section.contacto div.contacto-info p img{
+    width: 1.3rem;
+    padding-right: 1rem;
+}
+section.contacto-formulario{
+    width: 50%;
+    height: 70vh;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(53, 73, 99, 0.747);
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.contacto-formulario form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+section.contacto-formulario form input, section.contacto-formulario form textarea{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+section.contacto-formulario form input[type="submit"]{
+    width: 3rem;
+    text-decoration: none;
+    color: black; 
+    padding: 9px;
+    background-color:rgb(228, 113, 41);
+}
+
+section.contacto-formulario form input[type="submit"]:hover{
+    background-color: rgba(226, 226, 226, 0.253);
+}
+/* ---------------Fin Contacto------------------- */
+
+
+
+
+/* ---------------- Error 404 ---------------- */
+body#error{
+    height: 100vh;
+    background-image: url("../assets/img/error-404/404.png");
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body#error div{
+margin-top: 18rem;
+
+}
+
+body#error div a {
+    width: 3rem;
+    text-decoration: none;
+    color: black; 
+    padding: 12px;
+    background-color:rgb(228, 113, 41);
+}
+
+body#error div a:hover {
+    background-color: rgba(255, 228, 196, 0.377);
+}
+/* ----------------Fin  Error 404 ---------------- */
+
+/*--------------- Footer -------------- */
+
+footer{
+    height: 6rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(214, 213, 168);
+    
+
+}
+footer h3{
+    font-size: 1.5rem;
+}
+footer section.informacion{
+    margin-top: 1rem;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section.informacion div.marca {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+footer section.informacion div.contacto{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+footer section.informacion div.contacto div.direccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer section.informacion div.contacto h3 {
+    margin-bottom: 1.5rem;
+
+}
+
+footer section.informacion div.contacto p {
+    margin-bottom: 1rem;
+}
+
+footer section.informacion div.contacto img{
+    width: 1.2rem;
+}
+
+footer section.informacion div.redes-sociales{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer section.informacion div.redes-sociales div{
+    width: 65%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer section.informacion div.redes-sociales img {
+    width: 2rem;
+}
+
+
+
+footer section.autor{
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+div.redes-sociales {
+    padding-top: 0.5rem;
+}
+
+div.icono-redes a:hover{
+    background-color:rgb(228, 113, 41);
+}
+
+p#correo a {
+    text-decoration: none;
+    color: rgb(228, 113, 41);;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ Fin Main ----------- */
+
+
+
+
+
+
+
+
+
+/* ------------- Breack Points ---------------------- */
+
+@media (max-width : 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header nav {
+        width: 95%;
+        margin-right: 0;
+
+    }
+    footer section.informacion div.marca, footer section.informacion div.contacto,footer section.informacion div.redes-sociales{
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom:1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.281);
+    }
+
+    footer section.informacion{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+}
+
+@media (max-width : 576px) {
+    main section.servicio{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    footer {
+        margin-top: 2rem;
+    }
+
+    footer div.marca{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    footer section.informacion{
+        padding: 0;
+    }
+    footer section.informacion div.marca, footer section.informacion div.contacto,footer section.informacion div.redes-sociales{
+        width: 100%;
+    }
+
+    
+}
